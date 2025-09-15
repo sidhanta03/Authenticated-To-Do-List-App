@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Dashboard from "./pages/Dashbord.jsx";
-import ProtectedRoute from "./components/ProtectedRoutes.jsx";
+import ProtectedRoutes from "./Components/ProtectedRoutes.jsx";
 
 export default function App() {
   return (
@@ -15,9 +15,9 @@ export default function App() {
       <Route
         path="/dashboard"
         element={
-          <ProtectedRoute>
+          <ProtectedRoutes>
             <Dashboard />
-          </ProtectedRoute>
+          </ProtectedRoutes>
         }
       />
     </Routes>
